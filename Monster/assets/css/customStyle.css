@@ -23,8 +23,32 @@ progress {
     background-color: rgba(0,0,0,0.2);
 }
 
+.redText {
+    color: red;
+}
+
 .whiteText {
     color: #FFFFFF;
+}
+
+.whiteText a {
+    color: #FFFFFF;
+}
+
+ul,li.whiteText {
+    list-style-type: disc;
+    color: #FFFFFF;
+}
+ul.whiteText {
+    margin-left: 20px;
+}
+
+ul,li.redText {
+    list-style-type: square;
+    color: red;
+}
+ul.redText {
+    margin-left: 20px;
 }
 
 .botDebacleProject {

@@ -125,45 +125,45 @@ Version      : 1.0
          * ----------------------------------------------------------------------------------------
          */
 
-        $("#botDebacleModal").on('hide.bs.modal', () => {
-            window.stopYouTubeVideo("#botDebacleVideo");
-        });
-        $("#tronModal").on('hide.bs.modal', () => {
-            window.stopYouTubeVideo("#tronVideo");
-        });
-        $("#gostModal").on('hide.bs.modal', () => {
-            window.stopYouTubeVideo("#gostVideo");
-        });
-        $("#stationDefenderModal").on('hide.bs.modal', () => {
-            window.stopYouTubeVideo("#stationDefenderVideo");
-        });
+        // $("#botDebacleModal").on('hide.bs.modal', () => {
+        //     window.stopYouTubeVideo("#botDebacleVideo");
+        // });
+        // $("#tronModal").on('hide.bs.modal', () => {
+        //     window.stopYouTubeVideo("#tronVideo");
+        // });
+        // $("#gostModal").on('hide.bs.modal', () => {
+        //     window.stopYouTubeVideo("#gostVideo");
+        // });
+        // $("#stationDefenderModal").on('hide.bs.modal', () => {
+        //     window.stopYouTubeVideo("#stationDefenderVideo");
+        // });
 
         window.openYouTubeModal = (element, videoElement) => {
             $(element).modal();
         
-            var sourceLink = $(videoElement)[0].src;
+            // var sourceLink = $(videoElement)[0].src;
 
-            if(sourceLink.indexOf("autoplay=0") > -1) {
-                sourceLink = sourceLink.replace("autoplay=0", "autoplay=1");
-            }
-            else if(sourceLink.indexOf("autoplay") === -1)  {
-                sourceLink += "&autoplay=1";
-            }
+            // if(sourceLink.indexOf("autoplay=0") > -1) {
+            //     sourceLink = sourceLink.replace("autoplay=0", "autoplay=1");
+            // }
+            // else if(sourceLink.indexOf("autoplay") === -1)  {
+            //     sourceLink += "&autoplay=1";
+            // }
 
-            $(videoElement)[0].src = sourceLink;
+            // $(videoElement)[0].src = sourceLink;
         }
 
         window.stopYouTubeVideo = (videoElement) => {
-            var sourceLink = $(videoElement)[0].src;
+            // var sourceLink = $(videoElement)[0].src;
             
-            if(sourceLink.indexOf("autoplay=1") > -1) {
-                sourceLink = sourceLink.replace("autoplay=1", "autoplay=0");
-            }
-            else if(sourceLink.indexOf("autoplay") === -1)  {
-                sourceLink += "&autoplay=0";
-            }
+            // if(sourceLink.indexOf("autoplay=1") > -1) {
+            //     sourceLink = sourceLink.replace("autoplay=1", "autoplay=0");
+            // }
+            // else if(sourceLink.indexOf("autoplay") === -1)  {
+            //     sourceLink += "&autoplay=0";
+            // }
 
-            $(videoElement)[0].src = sourceLink;
+            // $(videoElement)[0].src = sourceLink;
         }
 
 
